@@ -1,0 +1,23 @@
+addons:
+  apt:
+    packages:
+     - libtk-img
+     - mesa-common-dev
+     - libglu1-mesa-dev
+     - freeglut3-dev
+     - libssl-dev
+     - libcurl4-gnutls-dev
+     - libxml2-dev
+     - xvfb
+     
+language: r
+
+before_install:
+  - R -q -e 'install.packages(c("sdpt3r","testthat","knitr","rmarkdown"))'
+ 
+cache: packages
+
+r:
+ - oldrel
+ - release
+ - devel
