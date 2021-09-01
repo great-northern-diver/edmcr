@@ -12,7 +12,7 @@ Point configurations in specified dimensions can be determined from the completi
 Special problems such as the sensor localization problem and reconstructing
 the geometry of a molecular structure can also be solved.
 
-Online documentation: [https://rwoldford.github.io/edmcr/](https://rwoldford.github.io/edmcr/)  
+Online documentation: [https://great-northern-diver.github.io/edmcr/](https://great-northern-diver.github.io/edmcr/)  
 
 ## References
 
