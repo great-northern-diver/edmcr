@@ -1,0 +1,68 @@
+home:
+  strip_header: true
+
+navbar:
+  type: default
+  right:
+    - icon: fa-github fa-lg
+      href: https://github.com/rwoldford/edmcr
+
+development:
+  mode: release
+
+reference:
+
+  - title: Matrix completion
+    desc:  Functions to complete Euclidean (squared) distance matrices
+    contents:
+    - edmc
+    - dpf
+    - grs 
+    - npf
+    - sdp
+    - snl
+
+  - title: Point configurations
+    desc:  Produced from complete Euclidean (squared) distance matrix 
+    contents:
+    - getConfig
+    - rgrs
+    
+
+  - title: Minimal spanning tree functions
+    desc:  Miscellaneous algorithms related to mst
+    contents:
+    - mst
+    - mstLB
+    - mstUB
+    - primPath
+    
+  - title: Matrix conversion
+    desc:  Functions to convert from and to Euclidean (squared) distance matrices
+    contents:
+    - edm2gram
+    - gram2edm
+    - edm2psd
+    - psd2edm
+
+  - title: Matrix functions
+    desc:  Miscellaneous functions on matrices 
+    contents:
+    - colamdR
+   
+  
+  - title: Special problems
+    desc:  Methods for specialized problems in the literature
+    contents:
+    - sprosr
+    - snl
+
+  - title: Data
+    desc: Data used in various examples
+    contents:
+    - A
+    - sprosr_aco
+    - sprosr_seq
+    - sprosr_upl
+
+

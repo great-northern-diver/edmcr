@@ -1,0 +1,35 @@
+Package: edmcr
+Version: 0.2.0
+Date: 2021-08-23
+Title: Euclidean Distance Matrix Completion Tools
+Description: Implements various general algorithms to estimate missing elements
+   of a Euclidean (squared) distance matrix.  
+   Includes optimization methods based on semi-definite programming, 
+   nonparametric position, and dissimilarity parameterization formulas.
+   When the only non-missing
+   distances are those on the minimal spanning tree, the guided random search
+   algorithm will complete the matrix while preserving the minimal spanning tree.
+   Point configurations in specified dimensions can be determined from the completions. 
+   Special problems such as the sensor localization problem and reconstructing
+   the geometry of a molecular structure can also be solved.
+Authors@R: c(person(given = "Adam", family = "Rahman",
+                    email = "adamrahman@live.ca", 
+                    role = c("aut")),
+             person(given = "R. Wayne", family = "Oldford",
+                    email = "rwoldford@uwaterloo.ca", 
+                    role = c("aut", "cre", "ths")),
+             person(given = "Timothy", family = "Davis", 
+                    role = "ctb"),
+             person(given = "Stefan", family = "Larimore", 
+                    role = "ctb")
+             )
+Maintainer: R. Wayne Oldford <rwoldford@uwaterloo.ca>
+URL: https://github.com/rwoldford/edmcr
+Depends: R (>= 3.2.0)
+Imports: Matrix, igraph, lbfgs, truncnorm, MASS, nloptr, vegan, sdpt3r,
+        utils, methods, stats
+KeepSource: yes
+NeedsCompilation: yes
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.1
