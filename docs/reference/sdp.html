@@ -171,6 +171,7 @@ It must satisfy the following conditions in order to be completed:</p><ul>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
+<span class='kw'>if</span> <span class='op'>(</span><span class='cn'>FALSE</span><span class='op'>)</span> <span class='op'>{</span>
 <span class='va'>D</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/matrix.html'>matrix</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>3</span>,<span class='fl'>4</span>,<span class='fl'>3</span>,<span class='fl'>4</span>,<span class='fl'>3</span>,
              <span class='fl'>3</span>,<span class='fl'>0</span>,<span class='fl'>1</span>,<span class='cn'>NA</span>,<span class='fl'>5</span>,<span class='cn'>NA</span>,
              <span class='fl'>4</span>,<span class='fl'>1</span>,<span class='fl'>0</span>,<span class='fl'>5</span>,<span class='cn'>NA</span>,<span class='fl'>5</span>,
@@ -183,20 +184,10 @@ It must satisfy the following conditions in order to be completed:</p><ul>
              <span class='fl'>1</span>,<span class='fl'>0</span>,<span class='fl'>1</span>,<span class='fl'>1</span>,<span class='fl'>1</span>,<span class='fl'>0</span>,
              <span class='fl'>1</span>,<span class='fl'>1</span>,<span class='fl'>0</span>,<span class='fl'>1</span>,<span class='fl'>1</span>,<span class='fl'>1</span>,
              <span class='fl'>1</span>,<span class='fl'>0</span>,<span class='fl'>1</span>,<span class='fl'>0</span>,<span class='fl'>1</span>,<span class='fl'>1</span><span class='op'>)</span>, byrow<span class='op'>=</span><span class='cn'>TRUE</span>, nrow<span class='op'>=</span><span class='fl'>6</span><span class='op'>)</span>
-
+             
 <span class='fu'><a href='edmc.html'>edmc</a></span><span class='op'>(</span><span class='va'>D</span>, method<span class='op'>=</span><span class='st'>"sdp"</span>, A<span class='op'>=</span><span class='va'>A</span>, toler<span class='op'>=</span><span class='fl'>1e-2</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; $D
-#&gt;          [,1]     [,2]     [,3]     [,4]     [,5]     [,6]
-#&gt; [1,] 0.000000 3.075874 3.967780 3.075874 3.967780 3.035247
-#&gt; [2,] 3.075874 0.000000 1.206197 4.498705 5.009161 4.585081
-#&gt; [3,] 3.967780 1.206197 0.000000 5.009161 5.577564 5.007355
-#&gt; [4,] 3.075874 4.498705 5.009161 0.000000 1.206197 4.585081
-#&gt; [5,] 3.967780 5.009161 5.577564 1.206197 0.000000 5.007355
-#&gt; [6,] 3.035247 4.585081 5.007355 4.585081 5.007355 0.000000
-#&gt; 
-#&gt; $optval
-#&gt; [1] 0.008815824
-#&gt; </div><div class='input'>
+<span class='op'>}</span>
+
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
