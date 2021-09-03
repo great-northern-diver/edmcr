@@ -42,8 +42,6 @@
 #' \item{X}{Matrix containing the three dimensional point configuration of the protein structure.}
 #' \item{report}{A list containing the final violations of the protein}
 #' 
-#' @examples
-#' #Not Run
 #' 
 #' @references 
 #' Ramandi, Babak A., (2011). New Approaches to Protein NMR Automation. PhD Thesis.

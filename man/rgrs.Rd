@@ -48,6 +48,7 @@ This restriction allows the user to introduce striation into their point configu
 }
 \examples{
 
+\dontrun{
 #An example where edge lengths are supplied
 EL <- runif(100,0,1)
 rgrs(edges = EL, d = 2)
@@ -62,5 +63,6 @@ rgrs(d=2, n=100, stringy = "H")
  
 #An Example making use of theta
 rgrs(d=2, n=100, theta=c(pi/4,pi/3,.5))
- 
+
+}
 }
