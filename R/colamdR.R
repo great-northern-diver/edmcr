@@ -10,7 +10,7 @@
 #' @return A vector containing the column minimum degree permutation of the matrix M.
 #' 
 #' @examples
-#' M <- matrix(c(1,1,0,0,1,0,0,1,0,1,1,1,1,1,0,0,1,0,1,0),ncol=4)
+#' M <- matrix(c(1,1,0,0,1,0,0,1,0,1,1,1,1,1,0,0,1,0,1,0), ncol=4)
 #' p <- colamdR(M)
 #' M[,p]
 #' 

@@ -35,6 +35,7 @@
 #'
 #'@examples
 #'
+#'\dontrun{
 #'D <- matrix(c(0,3,4,3,4,3,
 #'              3,0,1,NA,5,NA,
 #'              4,1,0,5,NA,5,
@@ -47,8 +48,9 @@
 #'              1,0,1,1,1,0,
 #'              1,1,0,1,1,1,
 #'              1,0,1,0,1,1), byrow=TRUE, nrow=6)
-#'
+#'              
 #'edmc(D, method="sdp", A=A, toler=1e-2)
+#'}
 #'
 #'@seealso \code{\link{psd2edm}}
 #'
