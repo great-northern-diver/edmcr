@@ -246,7 +246,7 @@ sprosr <- function(seq, aco, upl, hydrogen_omission=1, f=c(10,10,10,10,10), in_m
   ############### ANALYSIS OF OUTPUT #######################
   ##########################################################
   
-  print("Violation (raw)")
+  message("Violation (raw)")
   check_eq_cons <- equality_con_former(rand_X, Comp, 2)
   report <- protchecker(rawX, Comp, check_eq_cons, lo_bounds, up_bounds, 1)
   
@@ -268,7 +268,7 @@ sprosr <- function(seq, aco, upl, hydrogen_omission=1, f=c(10,10,10,10,10), in_m
   out <- hanso_post_processing(rand_X, rawX, Comp, lo_bounds, up_bounds, W, f)
   pX <- out$X
 
-  print("Violations (GD-I)")
+  message("Violations (GD-I)")
   p_report <- protchecker(pX, Comp, check_eq_cons, lo_bounds, up_bounds, 1)
   
   if(sum(p_report$phi[!is.nan(p_report$phi)] > 0) > 0.5*length(p_report$phi)){
@@ -278,32 +278,32 @@ sprosr <- function(seq, aco, upl, hydrogen_omission=1, f=c(10,10,10,10,10), in_m
   p_report <- protchecker(pX, Comp, check_eq_cons, lo_bounds, up_bounds, 0)
   
   #Correct Chiralities
-  print("Correcting Chiralities")
+  message("Correcting Chiralities")
   pXc <- chirality_correction(pX, Comp, p_report$chiral)
-  print("Violations (after fixing chiralities)")
+  message("Violations (after fixing chiralities)")
   p_report <- protchecker(pX, Comp, check_eq_cons, lo_bounds, up_bounds, 1)
   
   out <- hanso_post_processing(rand_X, pXc, Comp, lo_bounds, up_bounds, W, f)
   pX <- out$X
 
-  print("Violations (GD-II)")
+  message("Violations (GD-II)")
   pc_report <- protchecker(pX, Comp, check_eq_cons, lo_bounds, up_bounds, 1)
   
-  print("Correcting Chiralities")
+  message("Correcting Chiralities")
   pXc <- chirality_correction(pX, Comp, pc_report$chiral)
   
   if(hydrogen_omission){
-    print("Put Hydrogen atoms back")
+    message("Put Hydrogen atoms back")
     pX_wh <- hydrogen_mapper(pXc, wh_rand_X, Comp, wh_Comp, A)
     check_eq_cons_wh <- equality_con_former(wh_rand_X, wh_Comp, 2)
-    print("Violations (after putting hydrogen atoms back")
+    message("Violations (after putting hydrogen atoms back")
     f_report <- protchecker(pX_wh, wh_Comp, check_eq_cons_wh, wh_lo_bounds, wh_up_bounds,1)
     
     out <- hanso_post_processing(wh_rand_X, pX_wh, wh_Comp, wh_lo_bounds, wh_up_bounds, W, f)
     fX <- out$X
     wh_info <- out$info
     
-    print("Violation (FINAL)")
+    message("Violation (FINAL)")
     final_report <- protchecker(fX, wh_Comp, check_eq_cons_wh, wh_lo_bounds, wh_up_bounds,1)
   }
   

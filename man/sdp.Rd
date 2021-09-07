@@ -44,7 +44,7 @@ It must satisfy the following conditions in order to be completed:
 }
 \examples{
 
-\dontrun{
+\donttest{
 D <- matrix(c(0,3,4,3,4,3,
              3,0,1,NA,5,NA,
              4,1,0,5,NA,5,
