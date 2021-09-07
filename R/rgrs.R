@@ -26,20 +26,20 @@
 #'
 #'@examples 
 #' 
-#'\dontrun{
-#' #An example where edge lengths are supplied
+#'\donttest{
+#' # An example where edge lengths are supplied
 #' EL <- runif(100,0,1)
 #' rgrs(edges = EL, d = 2)
 #' rgrs(edges = EL, d = 3) 
 #'  
-#' #An Example where edge lengths are simulated internally
+#' # An Example where edge lengths are simulated internally
 #' rgrs(d=2, n=100)
 #' rgrs(d=3, n=100)
 #' rgrs(d=2, n=100, outlying="H")
 #' rgrs(d=2, n=100, skew = "M")
 #' rgrs(d=2, n=100, stringy = "H")
 #'  
-#' #An Example making use of theta
+#' # An Example making use of theta
 #' rgrs(d=2, n=100, theta=c(pi/4,pi/3,.5))
 #'
 #'}

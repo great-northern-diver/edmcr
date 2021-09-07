@@ -87,7 +87,7 @@ reducer <- function(X, Comp, type=0){
       
       oldCq <- tCq
       oldU <- tempU
-      #print(dim(oldU[[1,1]]))
+      #message(paste("dim(oldU[[1,1]]) = ", dim(oldU[[1,1]])))
       old_num_cliq_level <- num_cliq_level
     }
     U <- oldU[[1,1]]
