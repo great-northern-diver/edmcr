@@ -1,4 +1,4 @@
-# edmcr <img src="man/figures/logo.png" align="right" width="120" />
+## edmcr <img src="man/figures/logo.png" align="right" width="120" />
 
 An R package for Euclidean (squared) distance matrix completion (and determining point configurations based on the completed matrix.)
 
