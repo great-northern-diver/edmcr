@@ -11,3 +11,4 @@
 # edmcr 0.1
 
 * initial release on CRAN
+

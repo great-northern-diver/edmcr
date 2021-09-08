@@ -23,3 +23,7 @@ Online documentation: [https://great-northern-diver.github.io/edmcr/](https://gr
 - Fang and O'Leary (2012) "Euclidean Matrix Completion Problems", Optimization Methods and Software, Volume 27, pages 695-717,  [doi:10.1080/10556788.2011.643888](https://doi.org/10.1080/10556788.2011.643888)
 - Rahman and Oldford (2018) "Euclidean Distance Matrix Completion and Point Configurations from the Minimal Spanning Tree", SIAM Journal on Optimization, Volume 28, pages 528-550  [doi:10.1137/16M1092350](https://doi.org/10.1137/16M1092350)
 - Rahman (2018) "Preserving Measured Structure During Generation and Reduction of Multivariate Point Configurations", Doctoral dissertation UWSpace theses [http://hdl.handle.net/10012/13365](https://hdl.handle.net/10012/13365)
+
+Other source code:
+
+- makes use of some `C` source code (sparse matrix column ordering authored by Stefan I. Larimore and Timothy A. Davis) from the Suite Sparse collection.

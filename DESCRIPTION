@@ -1,6 +1,6 @@
 Package: edmcr
 Version: 0.2.0
-Date: 2021-09-07
+Date: 2021-09-08
 Title: Euclidean Distance Matrix Completion Tools
 Description: Implements various general algorithms to estimate missing elements
    of a Euclidean (squared) distance matrix.  
@@ -24,13 +24,8 @@ Authors@R: c(person(given = "Adam", family = "Rahman",
                     role = c("aut")),
              person(given = "R. Wayne", family = "Oldford",
                     email = "rwoldford@uwaterloo.ca", 
-                    role = c("aut", "cre", "ths")),
-             person(given = "Timothy", family = "Davis", 
-                    role = "ctb"),
-             person(given = "Stefan", family = "Larimore", 
-                    role = "ctb")
+                    role = c("aut", "cre", "ths"))
              )
-Author: Adam Rahman and R. Wayne Oldford with some C source code contributed by Timothy Davis and Stefan Larimore
 Maintainer: R. Wayne Oldford <rwoldford@uwaterloo.ca>
 URL: https://github.com/great-northern-diver/edmcr
 Depends: R (>= 3.2.0)
