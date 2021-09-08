@@ -6,7 +6,7 @@ Description: Implements various general algorithms to estimate missing elements
    of a Euclidean (squared) distance matrix.  
    Includes optimization methods based on semi-definite programming found in
    Alfakih, Khadani, and Wolkowicz (1999)<doi:10.1023/A:1008655427845>, 
-   a nonconvex position formulation by Fang and O'Leary (2012)<doi:10.1080/10556788.2011.643888>, and 
+   a non-convex position formulation by Fang and O'Leary (2012)<doi:10.1080/10556788.2011.643888>, and 
    a dissimilarity parameterization formulation by Trosset (2000)<doi:10.1023/A:1008722907820>.
    When the only non-missing
    distances are those on the minimal spanning tree, the guided random search
